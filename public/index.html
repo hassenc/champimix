@@ -1,0 +1,91 @@
+<html >
+<head>
+	<title>Demo</title>
+
+
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/services.js"></script>
+	<script type="text/javascript" src="js/controllers/app.js"></script>
+	<script type="text/javascript" src="js/controllers/destinations.js"></script>
+	
+	
+	<script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/lib/svg.min.js"></script>
+	<script type="text/javascript" src="js/lib/d3.v3.min.js"></script>
+
+	<!-- 	
+	<script type="text/javascript" src="js/lib/snap.svg-min.js"></script>
+	<script type="text/javascript" src="js/lib/svg.easing.min.js"></script>
+	<script type="text/javascript" src="js/lib/svg.topath.min.js"></script>
+ 	-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+	<!-- Game -->
+	<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+	<script src="js/game/requestAnimationFrame.js"></script>
+	<script src="js/game/Keys.js"></script>
+	<script src="js/game/Player.js"></script>
+	<script src="js/game/Target.js"></script>
+	<script src="js/game/Hexagon.js"></script>
+	<script src="js/game/game.js"></script>
+
+	<!-- End Game -->
+
+</head>
+
+
+<body ng-app="defaultApp" ng-controller="GlobalCtrl"> 
+
+	<div class="container" ng-controller="AppCtrl">
+
+
+
+
+<!--      <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Game    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>         -->
+
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="750px" height="500px" 
+	 xml:space="preserve" style="background-color:#112C32">
+<defs>
+    <g id="character">
+		<circle cx="0" cy="0" r="10"></circle>
+	</g>
+	<g id="hexagon">
+		<rect x="50" y="50" width="50" height="50"></rect>
+	</g>
+</defs>
+<g id="targets">
+</g>
+<g id="decor">
+</g>
+<g id="perso">
+</g>
+
+
+</svg>
+
+
+
+
+
+
+	<script>
+		// Initialise the game
+		init();
+		animate();
+
+
+		
+	</script>
+
+
+<h1>Hello Game</h1>
+
+</div>
+</body>
+</html>
