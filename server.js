@@ -276,6 +276,8 @@ init();
 Loop();
 
 
+//TODO some changes to join server connection and socket.io setup
+
 
 
 
